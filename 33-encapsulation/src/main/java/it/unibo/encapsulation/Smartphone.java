@@ -54,6 +54,42 @@ public class Smartphone {
         this(DEF_N_CPU, DEF_RAM_SIZE, DEF_SD_SIZE, brand, model, hasGPS, has3G, DEF_HAS_NFC);
     }
 
+    public int getCpuCount() {
+        return this.cpuCount;
+    }
+
+    
+    public int getRam() {
+        return this.ram;
+    }
+
+    
+    public int getSdSize() {
+        return this.sdSize;
+    }
+
+    
+    public String getBrand() {
+        return this.brand;
+    }
+
+    
+    public String getModel() {
+        return this.model;
+    }
+
+    public boolean getGps() {
+        return this.hasGPS;
+    } 
+
+    public boolean get3G() {
+        return this.has3G;
+    }
+
+    public boolean getNFC() {
+        return this.hasNFC;
+    }
+
     public void printStringRep() {
         System.out.println("n CPU(s): " + cpuCount);
         System.out.println("RAM amount: " + ram);

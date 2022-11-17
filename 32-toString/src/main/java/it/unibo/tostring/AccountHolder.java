@@ -26,10 +26,12 @@ public class AccountHolder {
 
     public String toString() {
         // Should print name, surname, and account id.
-        return null;
+        return getName() + " " + getSurname()+ " " + getUserID();
     }
 
     public static void main(final String[] args) {
         System.out.println(new AccountHolder("Alex", "Ghini", 42));
+        AccountHolder nuovo = new AccountHolder("Mario", "Mussoni", 69);
+        System.out.println(nuovo);       
     }
 }
